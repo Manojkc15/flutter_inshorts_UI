@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(
@@ -59,13 +60,23 @@ class inshortsUI extends StatelessWidget {
             ],
           ),
           Container(
-            padding: EdgeInsets.only(left: 40.0, top: 220.0),
+            padding: EdgeInsets.fromLTRB(10.0,6.0,10.0,6.0),
+            decoration: BoxDecoration(
+              color: Colors.grey[850],
+              shape: BoxShape.rectangle,
+              borderRadius: BorderRadius.all(
+                Radius.circular(30.0),
+              ),
+            ),
+            margin: EdgeInsets.only(left: 40.0, top: 214.0),
             child: Text(
-              '  inshorts  ',
+              'inshorts',
               style: TextStyle(
                 fontSize: 15.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: .5,
                 color: Colors.grey,
-                backgroundColor: Colors.grey[850],
+                // backgroundColor: Colors.grey[850],
               ),
             ),
           ),
