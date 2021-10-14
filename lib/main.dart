@@ -46,9 +46,10 @@ class inshortsUI extends StatelessWidget {
                           'out that early on the second day of first Test. "Kohli is such a big wicket," he added'
                           'The 39-year-old has dismissed Kohli on sir occasions in Test so far, including twice for a duck.',
                           style: TextStyle(
-                              fontSize: 18.5,
-                              color: Colors.grey[400],
-                              letterSpacing: .75),
+                            fontSize: 18.5,
+                            color: Colors.grey[400],
+                            letterSpacing: .75,
+                          ),
                         ),
                       ],
                     ),
