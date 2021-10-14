@@ -31,11 +31,7 @@ class inshortsUI extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Unusual to get Kohli out so early:',
-                      style: TextStyle(fontSize: 22.0),
-                    ),
-                    Text(
-                      'Anderson on his golden duck',
+                      'Unusual to get Kohli out so early: Anderson on his golden duck',
                       style: TextStyle(fontSize: 22.0),
                     ),
                     SizedBox(height: 10.0),
@@ -47,8 +43,9 @@ class inshortsUI extends StatelessWidget {
                           'out that early on the second day of first Test. "Kohli is such a big wicket," he added'
                           'The 39-year-old has dismissed Kohli on sir occasions in Test so far, including twice for a duck.',
                           style: TextStyle(
+                            fontWeight: FontWeight.w300,
                             fontSize: 18.5,
-                            color: Colors.grey[400],
+                            color: Colors.grey[350],
                             letterSpacing: .75,
                           ),
                         ),
@@ -68,7 +65,7 @@ class inshortsUI extends StatelessWidget {
                 Radius.circular(30.0),
               ),
             ),
-            margin: EdgeInsets.only(left: 40.0, top: 214.0),
+            margin: EdgeInsets.only(left: 40.0, top: 215.0),
             child: Text(
               'inshorts',
               style: TextStyle(
