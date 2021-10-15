@@ -15,8 +15,25 @@ class inshortsUI extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Inshorts UI'),
+        automaticallyImplyLeading: false,
+        title: Text('My Feed'),
         centerTitle: true,
+        leading: Row(
+          children: [
+            Icon(Icons.arrow_back_ios_new_sharp),
+            TextButton(
+              // style: ButtonStyle(backgroundColor: ),
+              onPressed: () {},
+              child: Text('Discover'),
+            ),
+          ],
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.refresh),
+          ),
+        ],
       ),
       body: Stack(
         children: [
@@ -57,7 +74,7 @@ class inshortsUI extends StatelessWidget {
             ],
           ),
           Container(
-            padding: EdgeInsets.fromLTRB(10.0,6.0,10.0,6.0),
+            padding: EdgeInsets.fromLTRB(10.0, 6.0, 10.0, 6.0),
             decoration: BoxDecoration(
               color: Colors.grey[850],
               shape: BoxShape.rectangle,
@@ -93,7 +110,7 @@ class inshortsUI extends StatelessWidget {
               tooltip: 'Relevancy',
             ),
             IconButton(
-              icon: Icon(Icons.share),
+              icon: Icon(Icons.share_outlined),
               iconSize: 30.0,
               onPressed: () {},
               tooltip: 'Share',
