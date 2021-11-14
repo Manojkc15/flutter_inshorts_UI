@@ -18,20 +18,32 @@ class inshortsUI extends StatelessWidget {
         automaticallyImplyLeading: false,
         title: Text('My Feed'),
         centerTitle: true,
+        leadingWidth: 110.0,
         leading: Row(
           children: [
-            Icon(Icons.arrow_back_ios_new_sharp),
+            Icon(
+              Icons.arrow_back_ios_new_sharp,
+              color: Colors.blue,
+            ),
             TextButton(
-              // style: ButtonStyle(backgroundColor: ),
               onPressed: () {},
-              child: Text('Discover'),
+              child: Text(
+                'Discover',
+                style: TextStyle(
+                  fontSize: 18.0,
+                  color: Colors.white,
+                ),
+              ),
             ),
           ],
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(Icons.refresh),
+            icon: Icon(
+              Icons.refresh,
+              color: Colors.blue,
+            ),
           ),
         ],
       ),
